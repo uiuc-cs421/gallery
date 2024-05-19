@@ -1,0 +1,81 @@
+name:                interpreters
+version:             0.1.0.0
+github:              "mattoxb/first"
+license:             BSD3
+author:              "Mattox Beckman"
+maintainer:          "mattox@illinois.edu"
+copyright:           "2018"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/mattoxb/first#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- parser-combinators
+
+executables:
+  i1:
+    main:                Main.hs
+    source-dirs:         
+      - i1
+    ghc-options:
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -threaded
+    dependencies:
+    - megaparsec
+    - haskeline
+  i2:
+    main:                Main.hs
+    source-dirs:         
+      - i2
+    ghc-options:
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -threaded
+    dependencies:
+    - megaparsec
+    - haskeline
+  i3:
+    main:                Main.hs
+    source-dirs:         
+      - i3
+    ghc-options:
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -threaded
+    dependencies:
+    - megaparsec
+    - haskeline
+  i4:
+    main:                Main.hs
+    source-dirs:         
+      - i4
+    ghc-options:
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -threaded
+    dependencies:
+    - megaparsec
+    - haskeline
+  i5:
+    main:                Main.hs
+    source-dirs:         
+      - i5
+    ghc-options:
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -threaded
+    dependencies:
+    - megaparsec
+    - haskeline
